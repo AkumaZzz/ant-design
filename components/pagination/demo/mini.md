@@ -13,7 +13,7 @@ title:
 
 Mini size pagination.
 
-````jsx
+```jsx
 import { Pagination } from 'antd';
 
 function showTotal(total) {
@@ -21,14 +21,14 @@ function showTotal(total) {
 }
 
 ReactDOM.render(
-  <div>
+  <>
     <Pagination size="small" total={50} />
     <Pagination size="small" total={50} showSizeChanger showQuickJumper />
     <Pagination size="small" total={50} showTotal={showTotal} />
-  </div>,
-  mountNode
+  </>,
+  mountNode,
 );
-````
+```
 
 <style>
 #components-pagination-demo-mini .ant-pagination:not(:last-child) {
